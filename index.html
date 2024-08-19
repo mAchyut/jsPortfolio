@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/portFavicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/75d5c79eb9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <nav>
+                <h1><span>SUR</span>Yanshu</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark fas" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi,<br> I'm <span>Suryanshu</span></h1>
+            </div>
+        </div>
+    </header>
+    <!-- about ---------------------------------------------------------------------------->
+    <main id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="https://images.unsplash.com/photo-1719754327382-d86926dc62cc?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        width="500" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Detail-driven and innovative software development professional with a Master’s in Computer
+                        Applications. Leveraging strong programming skills in React, Redux, and JavaScript to drive
+                        growth. Passionate about software solutions, I bring a unique blend of analytical thinking and
+                        creative problem-solving. Eager to collaborate with forward-thinking teams on cutting-edge
+                        projects, I’m dedicated to making a meaningful impact in the tech industry.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages</span><br>javaScript, HTML</li>
+                            <li><span>Libraries / Frameworks</span><br>React js, Redux Toolkit</li>
+                            <li><span>Styling</span><br>Tailwind CSS, Sass, CSS</li>
+                            <li><span>UI/UX Design</span><br>Figma, Canva</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Frontend Development</span><br>Developed dynamic and responsive web applications using React.js and Redux.</li>
+                            <li><span>Backend Development</span><br>Built and maintained server-side applications with Node.js and Appwrite.</li>
+                            <li><span>Version Control</span><br>Managed code repositories and collaborated with teams using Git.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Master of Computer Applications (MCA)</span><br>Completed advanced coursework in computer science, software development, and project management.</li>
+                            <li><span>Bachelor of Arts in English (BA English)</span><br> Developed strong analytical, communication, and writing skills through comprehensive studies in English literature and language.</li>
+                            <!-- <li><span>Library</span><br>React js</li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Services ------------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">Skills</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h1>Technical Skills</h1>
+                    <p>Proficient in modern web development technologies and tools, including: <br> <br>
+
+                    <h4>Frontend Development:</h4> React, Redux, JavaScript, HTML, CSS, Tailwind CSS <br> <br>
+                    <B>Backend Development:</B> Node.js, Appwrite <br>
+                    <B>Version Control:</B> Git</p>
+                    <!-- <a href="">Learn More...</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h1>Soft Skills</h1>
+                    <p>Strong interpersonal and communication skills: <br> <br>
+
+                    <h4>Communication:</h4> Clear and concise verbal and written skills. <br> <br>
+                    <b>Teamwork:</b> Effective in diverse team environments. <br>
+                    <b>Problem-Solving:</b> Analytical and critical thinking abilities. <br> <br>
+                    <b>Time Management:</b> Organized and efficient in prioritizing tasks.
+                    </p>
+                    <!-- <a href="">Learn More...</a> -->
+                </div>
+                <div>
+                    <i class="fa-regular fa-file-code"></i>
+                    <h1>Creative Skills</h1>
+                    <p>Leveraging creativity for innovation and content creation: <br> <br>
+
+                    <h4>Design:</h4> Proficient in Adobe Photoshop, Canva, and Figma. <br> <br>
+                    <b>Content Creation:</b> Experienced in blogs, social media, and websites. <br> <br>
+                    <b>Innovation:</b> Developing unique solutions to problems. <br> <br>
+                    <b>Adaptability:</b> Quick to learn new technologies and adapt to changes.
+                    </p>
+                    <!-- <a href="">Learn More...</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio-------------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="images/Designer (7).png"
+                        alt="" height="100%">
+                    <div class="layer">
+                        <h3>Full-Stack Blog App</h3>
+                        <p><B>NarrativeNook</B> is a dynamic blog application designed to provide a seamless and engaging user experience for both writers and readers. Built using React and Redux for a responsive and interactive frontend, and Node.js with Appwrite for robust backend support, NarrativeNook ensures efficient data management and secure authentication. The application features a clean and intuitive UI, styled with Tailwind CSS, making it easy for users to navigate and enjoy content. With Git for version control, the development process is streamlined and collaborative. NarrativeNook is the perfect platform for sharing stories, articles, and insights, fostering a vibrant community of bloggers and readers.</p>
+                        <a href="https://storyflicker.netlify.app/" target="_blank" onclick="event.preventDefault(); window.open(this.href, '_blank', 'noopener,noreferrer');"><i class="fa-solid fa-up-right-from-square"></i></a>
+
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Designer (6).png"
+                        alt="image" height="100%">
+                    <div class="layer">
+                        <h3>Currency Converter App</h3>
+                        <p><B>Currency Converter</B> is a user-friendly application designed to provide real-time currency conversion. Built with React for a responsive and interactive interface, the app leverages external APIs to fetch the latest exchange rates, ensuring accurate and up-to-date conversions. The intuitive design, styled with Tailwind CSS, makes it easy for users to input amounts and select currencies for conversion. With no backend required, the app efficiently handles API calls directly from the frontend, offering a seamless and fast user experience. Ideal for travelers, business professionals, and anyone needing quick currency conversions, this app simplifies the process with just a few clicks.</p>
+                        <a href="#portfolio"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!-- <div class="work">
+                    <img src="https://images.unsplash.com/photo-1718919591308-331854adac35?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, nostrum minus! Voluptatum
+                            nostrum placeat recusandae.</p>
+                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div> -->
+            </div>
+            <a href="#portfolio" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- Contact----------------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">My Contact</h1>
+                    <p><i class="fa-solid fa-envelope"></i>onestring22@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+916206025863</p>
+                    <div class="social-icons">
+                        <a href="#contact"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://x.com/Achyut22_" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://www.instagram.com/hymn_achyut/?hl=en" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/suryanshuraj/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="Resume_Suryanshu.pdf" class="btn btn2" download>Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <div id="message"></div>
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <input type="submit" value="Submit" class="btn btn2">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 <span>MyPortFolio</span>. All rights reserved.
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

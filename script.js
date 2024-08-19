@@ -41,3 +41,13 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbzebvLZhVoFjcbp6xGUXo
         })
       .catch(error => console.error('Error!', error.message))
   });
+
+
+
+  //Prevent inspect
+  document.addEventListener('contextmenu', function(event) {
+      if(event.ctrlKey || event.shiftKey || event.altKey || event.metaKey){
+          return;
+        }
+        event.preventDefault();
+});

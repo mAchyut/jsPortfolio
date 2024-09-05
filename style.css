@@ -27,18 +27,24 @@ nav{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-}
+    background-color: rgba(70, 67, 67, 0.2); /* Adjust opacity as needed */
+    backdrop-filter: blur(15px);
+    padding: 20px 70px;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    left: 0;
+    top: 0;
+   }
 nav h2{
+    font-family: "Nerko One", cursive;
     margin-right: 10px;
-    background: linear-gradient(to right, #512222, #8d364f);
+    background: linear-gradient(to right, #9a0333, #ffffff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    box-shadow: 0px 1px #b54769;
     font-size: 30px;
 }
-/* nav h1 span{
-    color: #ff004f;
-} */
+
 
 nav ul li{
     margin: 10px 20px;
@@ -50,7 +56,7 @@ nav ul li::after{
     content: "";
     width: 0%;
     height: 3px;
-    background: #512222;
+    background: #b54769;
     position: absolute;
     left: 0;
     bottom: -6px;

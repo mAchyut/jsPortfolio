@@ -58,7 +58,7 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbzebvLZhVoFjcbp6xGUXo
 document.addEventListener('DOMContentLoaded', function() {
     const nav = document.querySelector('nav');
     window.addEventListener('scroll', function() {
-        if (window.scrollY > 0) {
+        if (window.scrollY > 1) {
             nav.classList.add('nav-scrolled');
         } else {
             nav.classList.remove('nav-scrolled');

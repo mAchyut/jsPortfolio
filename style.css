@@ -32,7 +32,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    /* Adjust opacity as needed */
     padding: 20px 70px;
     position: fixed;
     z-index: 10;
@@ -420,9 +419,13 @@ nav .fas {
         display: block;
         font-size: 25px;
     }
+    nav .fas:hover{
+        cursor: pointer;
+    }
 
     nav ul {
-        background: #ff004f;
+        backdrop-filter: blur(18px);
+        background: rgba(203, 132, 132, 0.6);
         position: fixed;
         top: 0;
         right: -200px;

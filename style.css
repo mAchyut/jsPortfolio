@@ -87,6 +87,8 @@ nav ul li a {
     margin-top: 20%;
     font-size: 30px;
     color: #fff;
+    position: absolute;
+    top: 0;
 }
 
 .header-text h1 {
@@ -406,7 +408,7 @@ nav .fas {
         margin-top: 100%;
         font-size: 16px;
     }
-
+    
     .container {
         padding: 30px 40px;
     }
@@ -446,6 +448,9 @@ nav .fas {
         top: 25px;
         left: 25px;
         cursor: pointer;
+    }
+    .layer p {
+        font-size: 7px;
     }
 
     .subtitle {

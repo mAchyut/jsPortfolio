@@ -1,36 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyCreativeSpace</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="images/favicon.ico"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/75d5c79eb9.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Adding particles.js -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="images/portFavicon.png" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/75d5c79eb9.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
+  <body>
+    <!-- Header Section with Particle Effect -->
     <header id="header">
-        <div class="container">
-            <nav>
-              <h2>MyCreativeSpace</h2> 
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark fas" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>Web Developer</p>
-                <h1>Hi,<br> I'm <span>Suryanshu</span></h1>
-            </div>
+      <div class="container">
+        <!-- Canvas for particle effect -->
+        <div id="particles-js"></div>
+
+        <nav>
+          <h2><a href="#header">MyCreativeSpace</a></h2>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark fas" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+          <p>Web Developer</p>
+          <h1>
+            Hi,<br />
+            I'm <span>Suryanshu</span>
+          </h1>
         </div>
+      </div>
     </header>
+
     <!-- about ---------------------------------------------------------------------------->
     <main id="about">
         <div class="container">
@@ -53,9 +70,9 @@
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>Languages</span><br>javaScript, HTML</li>
-                            <li><span>Libraries / Frameworks</span><br>React js, Redux Toolkit</li>
-                            <li><span>Styling</span><br>Tailwind CSS, Sass, CSS</li>
+                            <li><span>Frontend Development</span><br>ReactJS, JavaScript, Redux-toolkit, HTML, CSS, SASS, Tailwind CSS</li>
+                            <li><span>Backend Development</span><br>NodeJS, Express.js, MongoDB, Appwrite</li>
+                            <li><span>Full-Stack Framework</span><br>MERN</li>
                             <li><span>UI/UX Design</span><br>Figma, Canva</li>
                         </ul>
                     </div>
@@ -89,12 +106,12 @@
                     <p>Proficient in modern web development technologies and tools, including: <br> <br>
 
                     <h4>Frontend Development:</h4> React, Redux, JavaScript, HTML, CSS, Tailwind CSS <br> <br>
-                    <B>Backend Development:</B> Node.js, Appwrite <br> <br>
+                    <B>Backend Development:</B>MongoDB,Express.js, Node.js, Appwrite <br> <br>
                     <B>Version Control:</B> Git</p>
                     <!-- <a href="">Learn More...</a> -->
                 </div>
                 <div>
-                    <i class="fa-solid fa-crop-simple"></i>
+                  <i class="fa-solid fa-paint-brush"></i>
                     <h1>Soft Skills</h1>
                     <p>Strong interpersonal and communication skills: <br> <br>
 
@@ -106,11 +123,11 @@
                     <!-- <a href="">Learn More...</a> -->
                 </div>
                 <div>
-                    <i class="fa-regular fa-file-code"></i>
+                  <i class="fa-solid fa-cogs"></i>
                     <h1>Creative Skills</h1>
                     <p>Leveraging creativity for innovation and content creation: <br> <br>
 
-                    <h4>Design:</h4> Proficient in Adobe Photoshop, Canva, and Figma. <br> <br>
+                    <h4>Design:</h4> Canva and Figma. <br> <br>
                     <b>Content Creation:</b> Experienced in blogs, social media, and websites. <br> <br>
                     <b>Innovation:</b> Developing unique solutions to problems. <br> <br>
                     <b>Adaptability:</b> Quick to learn new technologies and adapt to changes.
@@ -127,17 +144,20 @@
             <h1 class="subtitle">My Work</h1>
             <div class="worklist">
                 <div class="work">
-                    <img src="images/Designer (7).png"
+                    <img src="https://images.unsplash.com/photo-1672289707168-224994bcc83e?q=80&w=1858&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt="" height="100%">
                     <div class="layer">
                         <h3>Full-Stack Blog App</h3>
-                        <p><B>NarrativeNook</B> is a dynamic blog application designed to provide a seamless and engaging user experience for both writers and readers. Built using React and Redux for a responsive and interactive frontend, and Node.js with Appwrite for robust backend support, NarrativeNook ensures efficient data management and secure authentication. The application features a clean and intuitive UI, styled with Tailwind CSS, making it easy for users to navigate and enjoy content. With Git for version control, the development process is streamlined and collaborative. NarrativeNook is the perfect platform for sharing stories, articles, and insights, fostering a vibrant community of bloggers and readers.</p>
+                        <p><B>Lieflog</B> 
+                           , a full-stack application designed to provide a smooth user experience while prioritizing security and privacy. It features a comprehensive authentication system that allows users to register and log in easily, ensuring their data is protected. Secure routes safeguard sensitive information, preventing unauthorized access and enhancing overall security.
+
+                          The application supports essential blog functionalities, such as creating, editing, and deleting posts, as well as commenting and liking content, fostering an engaging community of readers and writers. Additionally, Lieflog includes a reliable password recovery mechanism, enabling users to regain access to their accounts effortlessly if they forget their passwords. This feature enhances user convenience and reinforces the application’s commitment to security. With a focus on user-friendly design, advanced security measures, and interactive blogging features, Lieflog stands out as a trusted platform for sharing thoughts and ideas.</p>
                         <a href="https://storyflicker.netlify.app/" target="_blank" onclick="event.preventDefault(); window.open(this.href, '_blank', 'noopener,noreferrer');"><i class="fa-solid fa-up-right-from-square"></i></a>
 
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/Designer (6).png"
+                    <img src="https://images.unsplash.com/photo-1672289707168-224994bcc83e?q=80&w=1858&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt="image" height="100%">
                     <div class="layer">
                         <h3>Currency Converter App</h3>
@@ -145,56 +165,79 @@
                         <a href="#portfolio"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
-                <!-- <div class="work">
-                    <img src="https://images.unsplash.com/photo-1718919591308-331854adac35?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="">
-                    <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, nostrum minus! Voluptatum
-                            nostrum placeat recusandae.</p>
-                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div> -->
+
             </div>
             <a href="#portfolio" class="btn">See More</a>
         </div>
     </div>
 
-    <!-- Contact----------------------------------- -->
+    <!-- Contact Section -->
     <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="subtitle">My Contact</h1>
-                    <p><i class="fa-solid fa-envelope"></i>onestring22@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i>+916206025863</p>
-                    <div class="social-icons">
-                        <a href="#contact"><i class="fa-brands fa-square-facebook"></i></a>
-                        <a href="https://x.com/Achyut22_" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
-                        <a href="https://www.instagram.com/hymn_achyut/?hl=en" target="_blank"><i
-                                class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/suryanshuraj/" target="_blank"><i
-                                class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                    <a href="Resume_Suryanshu.pdf" class="btn btn2" download>Download Resume</a>
-                </div>
-                <div class="contact-right">
-                    <div id="message"></div>
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
-                        <input type="submit" value="Submit" class="btn btn2">
-                    </form>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="subtitle">My Contact</h1>
+            <p><i class="fa-solid fa-envelope"></i>onestring22@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>+1234567890</p>
+            <div class="social-icons">
+              <a href="#contact"
+                ><i class="fa-brands fa-square-facebook"></i
+              ></a>
+              <a href="https://x.com/Achyut22_" target="_blank"
+                ><i class="fa-brands fa-square-twitter"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/hymn_achyut/?hl=en"
+                target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/suryanshuraj/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
             </div>
+            <a href="OnePageAResume.pdf" class="btn btn2" download
+              >Download Resume</a
+            >
+          </div>
+          <div class="contact-right">
+            <div id="message"></div>
+            <form name="submit-to-google-sheet">
+              <input type="text" name="name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <input type="submit" value="Submit" class="btn btn2" />
+            </form>
+          </div>
         </div>
+      </div>
     </div>
-    <footer>
-        &copy; 2024 <span>MyCreativeSpace</span>. All rights reserved.
-    </footer>
-    <script src="script.js"></script>
-</body>
-<script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/47215689.js"></script>
 
+    <!-- Footer -->
+    <footer>
+      &copy; 2024 <span>MyCreativeSpace</span>. All rights reserved.
+    </footer>
+
+    <!-- Script Files -->
+    <script src="script.js"></script>
+
+    <!-- Initialize particles.js -->
+    <script>
+      particlesJS.load("particles-js", "particles.json", function () {
+        console.log("Particles.js loaded!");
+      });
+    </script>
+    
+  </body>
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/47215689.js"></script>
 </html>
